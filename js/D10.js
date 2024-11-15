@@ -320,6 +320,11 @@ console.log(newestMovie());
 /* ESERCIZIO 12
   Scrivi una funzione chiamata "newestMovie" che trova il film più recente nell'array "movies" fornito.
 */
+function countMovies() {
+  return movies.length;
+}
+console.log("-");
+console.log(countMovies());
 
 /* ESERCIZIO 13
   Scrivi una funzione chiamata countMovies che ritorna il numero di film contenuti nell'array "movies" fornito.
