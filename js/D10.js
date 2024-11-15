@@ -317,11 +317,21 @@ console.log(deleteProp(movies, "Poster"));
 /* ESERCIZIO 12
   Scrivi una funzione chiamata "newestMovie" che trova il film più recente nell'array "movies" fornito.
 */
-function countMovies() {
-  return movies.length;
+Scrivi una funzione chiamata "newestMovie" che trova il film più recente nell'array "movies" fornito.
+*/
+function newestMovie() {
+  let obj = []
+    for(let i = 0; i < movies.length; i++) {
+      if(movies[i].Year < 2000) {
+         obj.push(movies[i].Title);
+      }
+    }
+    return obj;
 }
+
 console.log("-");
-console.log(countMovies());
+console.log(newestMovie());
+
 
 /* ESERCIZIO 13
   Scrivi una funzione chiamata countMovies che ritorna il numero di film contenuti nell'array "movies" fornito.
